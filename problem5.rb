@@ -26,6 +26,7 @@ end
 puts "-------"
 puts n_factors.inspect
 puts "-------"
-smallect_common_divisible = 1
-n_factors.each {|k,v| smallect_common_divisible *= v.inject(:*) }
-puts smallect_common_divisible
+
+smallect_multiple = 1
+n_factors.each {|k,v| smallect_multiple *= v.inject(:*) }
+puts smallect_multiple

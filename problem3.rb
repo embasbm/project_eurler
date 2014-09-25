@@ -18,5 +18,5 @@ def factors(n)
 end
 
 
-puts factors(600851475143).max
+print "\n\nThe largest prime factor of the number 600851475143:\t" + factors(600851475143).max.to_s + "\n\n"
 

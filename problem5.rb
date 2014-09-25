@@ -17,7 +17,7 @@ end
 
 n_factors = Hash.new(0)
 
-1.upto(10) do |a|
+1.upto(20) do |a|
  factorize(a).group_by { |v| v }.each do |max_factor|
  	n_factors[max_factor[0]] = max_factor[1] if max_factor[1].size > n_factors[max_factor[0]].size || !n_factors.has_key?(max_factor[0])
  end
@@ -29,4 +29,5 @@ puts "-------"
 
 smallect_multiple = 1
 n_factors.each {|k,v| smallect_multiple *= v.inject(:*) }
-puts smallect_multiple
+print "\nthe smallest positive number that is evenly divisible by all of the numbers from 1 to 20:\t" + smallect_multiple.to_s + "\n\n"
+

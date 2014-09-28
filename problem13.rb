@@ -5,7 +5,7 @@ digits = [37107287533902102798797998220837590246510135740250, 463769376774900097
 def large_sum(digits)
 	sum = 0
 	digits.each {|x| sum+= x}
-	puts sum.to_s[0..9]
+	sum.to_s[0..9]
 end
 
 

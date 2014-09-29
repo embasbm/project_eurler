@@ -9,7 +9,6 @@ def t_num_divs(limit)
 	triangle = iterator * ( iterator + 1 ) / 2
 	
 	while get_num_divisors(triangle) < limit
-		print "#{triangle} "
 		iterator +=1	
 		triangle = iterator * ( iterator + 1 ) / 2
 	end
